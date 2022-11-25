@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Cauê Coser">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática - Aula 02</title>
+
+    <style>
+        #principal > h1,
+        #principal p > em,
+        article > p {
+            color: blue;
+        }
+
+        #principal h1 + p > em {
+            color: red;
+        }
+        
+        article > h1 {
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="principal">
+
+        <h1>TÍTULO AZUL</h1>
+        <p>Parágrafo com <em>ênfase nessa parte vermelha aqui</em>.</p> 
+        <p>Parágrafo com <em>ênfase nessa parte azul aqui</em>.</p>
+        
+        <article>
+
+            <h1>TÍTULO INTERNO VERDE</h1>
+            <p>PARÁGRAFO COM COR AZUL</p>
+
+        </article>
+    </div>
+</body>
+</html>
