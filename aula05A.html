@@ -8,8 +8,29 @@
     <title>Prática - Aula 05 (A)</title>
 
     <style>
+        /* Realizado com Display Table */
+        
         .tabela {
-            display: inline-block;
+            display: table;
+        }
+
+        .linha:nth-child(odd) {
+            background-color: #e0e0e0;
+        }        
+        .linha {
+            display: table-row;
+        }
+        
+        .coluna {
+            display: table-cell;
+            border: solid 1px #000;
+            padding: 10px;
+        }
+/* ================================================================================= */
+        /* Realizado com Display Flex */
+        
+        /* .tabela {
+            display: inline-block; /*Apenas para adaptar a div ao seu conteúdo.
         }
 
         .linha {
@@ -23,7 +44,29 @@
         .coluna {
             padding: 10px;
             border: solid 1px;
+        } */
+/* ================================================================================= */
+        /* Realizado com Display Grid */
+        
+        /* .tabela {
+            display: inline-block; /*Apenas para adaptar a div ao seu conteúdo.
         }
+        
+        .linha {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        
+        .linha:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        .coluna {
+            padding: 10px;
+            border: solid 1px #000;
+        } */
+
+
     </style>
 </head>
 <body>
