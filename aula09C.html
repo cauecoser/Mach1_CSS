@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Cauê Coser">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática - Aula 09 (C)</title>
+
+    <style>
+        .cadastro {
+            width: 300px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        input {
+            border: solid 1px #000;
+            padding: 10px 20px;
+        }
+
+        input:disabled {
+            background-color: #E0E0E0;
+        }
+        
+        input[readonly] {
+            font-weight: bold;
+            border-color: #A0A0A0;
+            color: #A0A0A0;
+        }
+
+        input:required {
+            outline: solid 1px red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cadastro">
+        <form>
+            <input type="text" value="TEXTO TESTE">
+            <input type="text" disabled value="TEXTO TESTE">
+            <input type="text" readonly value="TEXTO TESTE">
+            <input type="text" required value="TEXTO TESTE">
+        </form>
+    </div>
+</body>
+</html>
