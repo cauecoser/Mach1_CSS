@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Cauê Coser">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática - Aula 11 (A)</title>
+
+    <style>
+        .main_button {
+            background-color: #0F0C33;
+            color: #FFF;
+            padding: 5px;
+            height: 50px;
+            width: 100px;           
+        }
+        
+        .main_button:hover {
+            animation-name: arrocha;
+            animation-duration: 0.5s;
+        }
+
+        @keyframes arrocha {
+            25% {
+                transform: rotateZ(5deg);
+            }
+            75% {
+                transform: rotateZ(-5deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="main_button">Logar</button>
+    </div>
+</body>
+
+</html>
