@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Cauê Coser">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática - Aula 13 (B)</title>
+
+    <style>
+        div.elemento {
+            width: 50px;
+            height: 50px;
+            border: solid 1px;
+            background-color: gray;
+        }
+        
+        div.alternate {
+            background-color: blue;
+            
+        }
+        
+        div.panel {
+            width: 550px;
+            height: 100px;
+            border: solid 1px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        div.elemento:nth-child(even) {
+            align-self: flex-end;
+        }
+
+        div.elemento:nth-child(odd) {
+            align-self: flex-start;
+        }
+
+        div.elemento:first-child,div.elemento:last-child {
+            background-color: red;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="elemento"></div>
+        <div class="elemento alternate"></div>
+        <div class="elemento"></div>
+        <div class="elemento alternate"></div>
+        <div class="elemento"></div>
+        <div class="elemento alternate"></div>
+        <div class="elemento"></div>
+        <div class="elemento alternate"></div>
+        <div class="elemento"></div>
+    </div>
+</body>
+
+</html>
